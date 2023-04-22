@@ -1,7 +1,7 @@
 name: Checks
 on:
   pull_requests:
-    types: [opened, synchronize],
+    types: [opened, synchronize]
 
 jobs:
   checks:
@@ -28,4 +28,3 @@ jobs:
           npx lerna bootstrap
       - name: Run tests # Run tests of all packages
         run: npx lerna exec npm run test
-          
